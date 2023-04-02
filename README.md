@@ -14,3 +14,14 @@ _MERN-APP Web-Social_
 - Morgan - for Logging
 - Jsonwebtoken - for authentication
 - Mongoose - for mongodb access
+
+**FrontEnd tech stack**
+
+- ReduxToolkit - redux store
+- Redux-persist - store state in LocalStorage
+- React-dropzone - file upload
+- Formik - Form handler
+- Yup - validation
+- React-router-dom - Routing
+- MaterialUI - UI Framework
+- Emotion - Modern CSS
