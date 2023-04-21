@@ -26,18 +26,18 @@ export const authSlice = createSlice({
       if (state.user) {
         state.user.friends = action.payload.friends;
       } else {
-        console.log("user friends non-existent :(");
+        console.error("user friends non-existent :(");
       }
     },
     setPosts: (state, action) => {
       state.posts = action.payload.posts;
     },
     setPost: (state, action) => {
-      const updatedPost = state.posts.map((post) => {
-        if (post.id === action.payload.post._id) return action.payload.post;
+      const updatedPosts = state.posts.map((post) => {
+        if (post._id === action.payload.post._id) return action.payload.post;
         return post;
       });
-      state.posts = updatedPost;
+      state.posts = updatedPosts;
     },
   },
 });
